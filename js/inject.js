@@ -11,13 +11,17 @@ document.getElementById("all").style.fontFamily = "Impact";
 // document.getElementsByClassName("container").style.margin = "10px 20px";
 // document.getElementsByClassName("container").style.boxShadow = "2px 2px 10px";
 
-const newNavitem = document.createElement("li");
-newNavitem.className = "list-inline-item";
 
-const atag = document.createElement("a");
-atag.innerHTML = "News Letter";
-newNavitem.appendChild(atag);
+const navBar= document.querySelector('ul.navbar-nav')
 
-document
-  .getElementsByClassName("menu list-inline mb-0")
-  .appendChild(newNavitem);
+const liItem= document.createElement('li')
+const aTag= document.createElement('a')
+const text= document.createTextNode('Newsletter')
+
+liItem.classList.add('nav-item', 'menu-large')
+aTag.classList.add('nav-link')
+
+
+aTag.append(text)
+liItem.append(aTag)
+navBar.append(liItem)
