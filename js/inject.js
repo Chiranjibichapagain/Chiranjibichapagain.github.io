@@ -10,3 +10,10 @@ document.getElementsByClassName("box py-4").style.boxShadow = "2px 2px 10px";
 
 document.getElementsByClassName("container").style.margin = "10px 20px";
 document.getElementsByClassName("container").style.boxShadow = "2px 2px 10px";
+
+const newNavitem = document.createElement("li");
+newNavitem.className = "list-inline-item";
+newNavitem.innerHTML = "News Letter";
+document
+  .getElementsByClassName("menu list-inline mb-0")
+  .appendChild(newNavitem);
