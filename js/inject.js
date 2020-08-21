@@ -13,7 +13,11 @@ document.getElementsByClassName("container").style.boxShadow = "2px 2px 10px";
 
 const newNavitem = document.createElement("li");
 newNavitem.className = "list-inline-item";
-newNavitem.innerHTML = "News Letter";
+
+const atag = document.createElement("a");
+atag.innerHTML = "News Letter";
+newNavitem.appendChild(atag);
+
 document
   .getElementsByClassName("menu list-inline mb-0")
   .appendChild(newNavitem);
